@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap')
+
+html
+    background-color: #212d40
+    & > *
+        margin-left: 2em
+
+header
+    display: flex
+    justify-content: space-between
+    & > h1
+        color: #d66853
+        margin-bottom: 1em
+        font-family: 'Ubuntu', sans-serif
+    & > #task-count
+        display: flex
+        flex-direction: column
+        color: #B3BED0
+        background-color: #1c2738
+        border-radius: 10px
+        padding: .5em
+        font-size: 1.5em
+        font-family: 'Ubuntu', sans-serif
+        & > *
+            margin-left: auto
+        & > *:not(:last-child)
+            font-family: 'Ubuntu', sans-serif
+            margin-bottom: .5em
+
+#taskList > *
+    margin: 1em 0
+    padding: .75em
+    width: 750px
+
+.task
+    background-color: #364156
+    border-radius: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & > *
+        color: #B3BED0
+    & > .information
+        display: flex
+        flex-direction: column
+        & > .title, .input-title
+            margin-bottom: 1em
+            font-size: 1.75em
+            font-family: 'Ubuntu', sans-serif
+            background-color: transparent
+        & > .description, .input-description
+            font-size: 1.15em
+            font-family: 'Comfortaa', cursive
+            background-color: transparent
+    & > .buttons
+        display: flex
+        justify-content: space-between
+        width: 17%
+        & > .trashcan, .checkmark, .edit-task
+            width: 3em
+            height: 3em
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: transparent
+            border: none
+            border-radius: 10px
+            cursor: pointer
+            &:hover
+                background-color: #212d40
+            & > .delete-task-svg, .complete-task-svg, .edit-task-svg
+                width: 2.25em
+                height: 2.25em
+                filter: invert(84%) sepia(18%) saturate(245%) hue-rotate(178deg) brightness(91%) contrast(80%)
+
+@keyframes shake
+    0%
+        transform: translateX(0)
+    10%
+        transform: translateX(-10px)
+    20%
+        transform: translateX(10px)
+    30%
+        transform: translateX(-10px)
+    40%
+        transform: translateX(10px)
+    50%
+        transform: translateX(-10px)
+    60%
+        transform: translateX(10px)
+    70%
+        transform: translateX(-10px)
+    80%
+        transform: translateX(10px)
+    90%
+        transform: translateX(-10px)
+    100%
+        transform: translateX(0)
+
+.error
+    animation: shake 0.5s
+    animation-iteration-count: 1
+
+#task-form
+    width: 775px
+    background-color: #1c2738
+    margin-left: 0
+    display: flex
+    border-radius: 10px
+    & > *
+        font-size: 1.2em
+        width: 40vw
+    & .title-input
+        margin: .9em .45em .9em .9em
+    & .description-input
+        margin: .9em .9em .9em .45em
+    & .title-input, .description-input
+        padding: .6em
+        border: none
+        border-radius: 10px
+        background-color: #364156
+        color: #B3BED0
+        font: 16px 'Ubuntu', sans-serif
+        -webkit-transition: all 0.20s ease-in-out
+        -moz-transition: all 0.20s ease-in-out
+        -ms-transition: all 0.20s ease-in-out
+        -o-transition: all 0.20s ease-in-out
+        &::placeholder
+            font-style: italic
+        &:focus
+            outline: none
+            box-shadow: 0 0 10px #d66853
+    & > button
+        padding: .5em
+        margin-right: 1em
+        align-self: center
+        border: none
+        border-radius: 10px
+        font-size: 16px
+        background-color: #d66853
+        color: #212d40
+        cursor: pointer
+        &:hover
+            background-color: #212d40
+            color: #d66853
+
+form.information
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    & > *
+        background-color: #1c2738
+        color: #B3BED0
+        border: none
+        border-radius: 10px
+        padding: .25em
+        -webkit-transition: all 0.20s ease-in-out
+        -moz-transition: all 0.20s ease-in-out
+        -ms-transition: all 0.20s ease-in-out
+        -o-transition: all 0.20s ease-in-out
+        &:focus-visible
+            outline: none
+            box-shadow: 0 0 10px #d66853
+    & > .title-input
+        font-size: 1.75em
+        font-family: 'Ubuntu', sans-serif
+        margin-bottom: .75em
+    & > .description-input
+        font-size: 1.15em
+        font-family: 'Comfortaa', cursive

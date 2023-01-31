@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>To Do</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./stylesheets/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>To Do List</h1>
+			<div id="task-count">
+				<label
+					><span id="completed-tasks-daily"></span> tasks completed
+					today</label
+				>
+				<label
+					><span id="completed-tasks-lifetime"></span> lifetime tasks
+					completed</label
+				>
+			</div>
+		</header>
+		<div id="taskList">
+			<!-- <div class="task">
+				<div class="information">
+					<div class="title">Task 1</div>
+					<div class="description">Description 1</div>
+				</div>
+				<div class="buttons">
+					<button class="edit-task">
+						<img class="edit-task-svg" src="./images/edit.svg" />
+					</button>
+					<button class="checkmark">
+						<img
+							class="complete-task-svg"
+							src="./images/check.svg" />
+					</button>
+					<button class="trashcan">
+						<img class="delete-task-svg" src="./images/trash.svg" />
+					</button>
+				</div>
+			</div> -->
+		</div>
+		<form id="task-form">
+			<div class="form-group">
+				<input
+					class="form-control title-input"
+					name="title"
+					placeholder="Enter a title"
+					autocomplete="off" />
+			</div>
+			<div class="form-group">
+				<input
+					class="form-control description-input"
+					name="description"
+					placeholder="Add a description (optional)"
+					autocomplete="off" />
+			</div>
+			<button type="submit" class="btn-primary">Submit</button>
+		</form>
+	</body>
+</html>
+<script src="./index.js" async defer></script>
