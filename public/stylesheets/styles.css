@@ -70,7 +70,7 @@ header > #task-count > *:not(:last-child) {
 }
 .task > .information > .title-input {
   margin-bottom: 1em;
-  padding: 0.2em 0.2em 0.2em 0.5em;
+  padding: 0.2em 0.2em 0.2em 15px;
   border-radius: 10px;
   font-size: 1.75em;
   font-family: "Ubuntu", sans-serif;
@@ -86,7 +86,7 @@ header > #task-count > *:not(:last-child) {
   box-shadow: 0 0 10px #d66853;
 }
 .task > .information > .description-input {
-  padding: 0.2em 0.2em 0.2em 0.5em;
+  padding: 0.2em 0.2em 0.2em 15px;
   border-radius: 10px;
   font-size: 1.15em;
   font-family: "Comfortaa", cursive;

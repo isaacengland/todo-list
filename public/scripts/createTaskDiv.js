@@ -5,8 +5,10 @@ export const createTaskDiv = (id, title, description, complete) => {
 	const information = document.createElement('div');
 	information.classList.add('information');
 	const titleSpan = document.createElement('span');
+	titleSpan.id = `title-${id}`;
 	titleSpan.classList.add('title');
 	const descSpan = document.createElement('span');
+	descSpan.id = `description-${id}`;
 	descSpan.classList.add('description');
 	const buttons = document.createElement('div');
 	buttons.classList.add('buttons');

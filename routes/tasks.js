@@ -41,7 +41,7 @@ router.patch('/:id', getTask, async (req, res) => {
 	try {
 		const updatedTask = await res.task.save();
 		res.json(updatedTask);
-	} catch {
+	} catch (err) {
 		res.status(400).json({ message: err.message });
 	}
 });
