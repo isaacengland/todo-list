@@ -22,8 +22,10 @@ export const assignEditFunctions = async (task) => {
 		const inputs = [titleInput, descriptionInput];
 		inputs.forEach((input) => {
 			input.onkeydown = async (e) => {
-				if (e.key === 'Enter') {
-					// swap form inputs for title and description
+				if (e.key === 'Escape') {
+					titleInput.replaceWith(title);
+					descriptionInput.replaceWith(description);
+				} else if (e.key === 'Enter') {
 					if (titleInput.value.trim() === '') {
 						titleInput.classList.add('error');
 						setTimeout(() => {
@@ -31,6 +33,8 @@ export const assignEditFunctions = async (task) => {
 						}, 500);
 						return;
 					}
+
+					// swap form inputs for title and description
 
 					titleInput.replaceWith(title);
 					descriptionInput.replaceWith(description);

@@ -53,6 +53,7 @@ header > #task-count > *:not(:last-child) {
 .task > .information {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .task > .information > * {
   border: none;
@@ -62,11 +63,15 @@ header > #task-count > *:not(:last-child) {
   font-size: 1.75em;
   font-family: "Ubuntu", sans-serif;
   background-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .task > .information > .description {
   font-size: 1.15em;
   font-family: "Comfortaa", cursive;
   background-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .task > .information > .title-input {
   margin-bottom: 1em;

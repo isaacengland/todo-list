@@ -44,6 +44,7 @@ header
     & > .information
         display: flex
         flex-direction: column
+        width: 80%
         & > *
             border: none
         & > .title
@@ -51,10 +52,14 @@ header
             font-size: 1.75em
             font-family: 'Ubuntu', sans-serif
             background-color: transparent
+            overflow: hidden
+            text-overflow: ellipsis
         & > .description
             font-size: 1.15em
             font-family: 'Comfortaa', cursive
             background-color: transparent
+            overflow: hidden
+            text-overflow: ellipsis
         & > .title-input
             margin-bottom: 1em
             padding: .2em .2em .2em 15px
