@@ -54,16 +54,48 @@ header > #task-count > *:not(:last-child) {
   display: flex;
   flex-direction: column;
 }
-.task > .information > .title, .task > .information .input-title {
+.task > .information > * {
+  border: none;
+}
+.task > .information > .title {
   margin-bottom: 1em;
   font-size: 1.75em;
   font-family: "Ubuntu", sans-serif;
   background-color: transparent;
 }
-.task > .information > .description, .task > .information .input-description {
+.task > .information > .description {
   font-size: 1.15em;
   font-family: "Comfortaa", cursive;
   background-color: transparent;
+}
+.task > .information > .title-input {
+  margin-bottom: 1em;
+  padding: 0.2em 0.2em 0.2em 0.5em;
+  border-radius: 10px;
+  font-size: 1.75em;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #212d40;
+  color: #B3BED0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.task > .information > .title-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #d66853;
+}
+.task > .information > .description-input {
+  padding: 0.2em 0.2em 0.2em 0.5em;
+  border-radius: 10px;
+  font-size: 1.15em;
+  font-family: "Comfortaa", cursive;
+  background-color: #212d40;
+  color: #B3BED0;
+}
+.task > .information > .description-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #d66853;
 }
 .task > .buttons {
   display: flex;

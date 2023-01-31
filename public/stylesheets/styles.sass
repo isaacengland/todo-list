@@ -44,15 +44,42 @@ header
     & > .information
         display: flex
         flex-direction: column
-        & > .title, .input-title
+        & > *
+            border: none
+        & > .title
             margin-bottom: 1em
             font-size: 1.75em
             font-family: 'Ubuntu', sans-serif
             background-color: transparent
-        & > .description, .input-description
+        & > .description
             font-size: 1.15em
             font-family: 'Comfortaa', cursive
             background-color: transparent
+        & > .title-input
+            margin-bottom: 1em
+            padding: .2em .2em .2em .5em
+            border-radius: 10px
+            font-size: 1.75em
+            font-family: 'Ubuntu', sans-serif
+            background-color: #212d40
+            color: #B3BED0
+            -webkit-transition: all 0.20s ease-in-out
+            -moz-transition: all 0.20s ease-in-out
+            -ms-transition: all 0.20s ease-in-out
+            -o-transition: all 0.20s ease-in-out
+            &:focus
+                outline: none
+                box-shadow: 0 0 10px #d66853
+        & > .description-input
+            padding: .2em .2em .2em .5em
+            border-radius: 10px
+            font-size: 1.15em
+            font-family: 'Comfortaa', cursive
+            background-color: #212d40
+            color: #B3BED0
+            &:focus
+                outline: none
+                box-shadow: 0 0 10px #d66853
     & > .buttons
         display: flex
         justify-content: space-between

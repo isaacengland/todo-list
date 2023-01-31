@@ -35,8 +35,8 @@ router.patch('/:id', getTask, async (req, res) => {
 	if (req.body.description != null) {
 		res.task.description = req.body.description;
 	}
-	if (req.body.completed != null) {
-		res.task.completed = req.body.completed;
+	if (req.body.complete != null) {
+		res.task.complete = req.body.complete;
 	}
 	try {
 		const updatedTask = await res.task.save();

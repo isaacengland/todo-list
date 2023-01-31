@@ -12,13 +12,13 @@ Content-Type: application/json
 
 ###
 
-PATCH http://127.0.0.1:3000/tasks/63d87522f7612218d7881535
+PATCH http://127.0.0.1:3000/tasks/63d8a764fa7d63eebb618ba7
 Content-Type: application/json
 
 {
-    "completed": "true"
+    "completed": false
 }
 
 ###
 
-DELETE http://127.0.0.1:3000/tasks/63d87522f7612218d7881535
+DELETE http://127.0.0.1:3000/tasks/63d8a764fa7d63eebb618ba7
